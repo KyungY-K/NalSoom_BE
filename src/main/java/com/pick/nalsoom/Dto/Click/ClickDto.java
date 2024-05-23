@@ -1,17 +1,31 @@
 package com.pick.nalsoom.Dto.Click;
 
+import com.pick.nalsoom.Domain.Click.Click;
+
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 public class ClickDto {
 
-    private String click_proper_num;
-    private int cooling_center_click;
-    private int warming_center_click;
-    private int finedust_shelter_click;
-    private String user_proper_num;
+    private Long clickProperNum;
+    private int coolingCenterClick;
+    private int warmingCenterClick;
+    private int finedustShelterClick;
+    private String userProperNum;
+
+    public Click toEntity() {
+        return Click.builder()
+                .clickProperNum(clickProperNum)
+                .coolingCenterClick(coolingCenterClick)
+                .warmingCenterClick(warmingCenterClick)
+                .finedustShelterClick(finedustShelterClick)
+                .userProperNum(userProperNum)
+                .build();
+    }
 }

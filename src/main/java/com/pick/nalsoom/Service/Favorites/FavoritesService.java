@@ -1,5 +1,7 @@
 package com.pick.nalsoom.Service.Favorites;
 
-public interface FavoritesService {
-    
+import org.springframework.stereotype.Service;
+
+@Service("favoritesService")
+public class FavoritesService {
 }

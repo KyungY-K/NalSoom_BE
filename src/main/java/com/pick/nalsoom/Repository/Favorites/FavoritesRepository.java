@@ -4,7 +4,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.pick.nalsoom.Domain.Favorites.Favorites;
 
-public interface FavoritesRepository extends JpaRepository<Favorites, String>{
+public interface FavoritesRepository extends JpaRepository<Favorites, Long>{
 
     
 }
