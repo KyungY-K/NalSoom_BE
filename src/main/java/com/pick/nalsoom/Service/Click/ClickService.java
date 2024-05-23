@@ -1,5 +1,7 @@
 package com.pick.nalsoom.Service.Click;
 
-public interface ClickService {
-    
+import org.springframework.stereotype.Service;
+
+@Service("clickService")
+public class ClickService {
 }

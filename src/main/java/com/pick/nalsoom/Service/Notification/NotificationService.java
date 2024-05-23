@@ -1,5 +1,7 @@
 package com.pick.nalsoom.Service.Notification;
 
-public interface NotificationService {
-    
+import org.springframework.stereotype.Service;
+
+@Service("notificationService")
+public class NotificationService {
 }
